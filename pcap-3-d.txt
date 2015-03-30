@@ -2,3 +2,5 @@
 # Example:
 # Protocol 1
 # Protocol 2
+SFTP (Secure File Transfer Protocol)
+FTPS (FTP Secure)

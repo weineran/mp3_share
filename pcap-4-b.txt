@@ -1,3 +1,4 @@
 # Your answer here
 # Example:
 # Yes or No, with reasons
+No, the content of initial communications cannot be hidden because no encryption protocol has been agreed upon yet.  Furthermore, source and destination addresses probably can't be encrypted in general because the routers wouldn't be able to direct the traffic correctly.
