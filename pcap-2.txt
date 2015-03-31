@@ -1,3 +1,4 @@
 # Your answer here
 # Example:
 # ISP backbone because...
+Personal network (a home or apartment) because there are only 3 devices and the data rate sent/received doesn't look super intense (0.585 Average MBit/sec).  Also there are some domains contacted that look like an individual's web browsing activity such as youtube.com, google.com, and facebook.com.
