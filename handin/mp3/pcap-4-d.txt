@@ -1,0 +1,4 @@
+# Your answer here
+# Example:
+# Yes or No, with reasons
+Yes, all suites using the RC4 crypto algorithm are worrisome because according to wikipedia (en.wikipedia.org/wiki/RC4) the keystream is nonrandom and as a result, the use of this algorithm was prohibited in TLS as of February 2015.

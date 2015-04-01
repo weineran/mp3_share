@@ -1,0 +1,3 @@
+# Netids of your team members. Put each netid on a separate line. If you worked alone, include only your netid.
+ajweine2
+zachrice

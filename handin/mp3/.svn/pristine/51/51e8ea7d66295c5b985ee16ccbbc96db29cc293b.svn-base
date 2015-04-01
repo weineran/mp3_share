@@ -1,0 +1,2 @@
+# Your answer here
+It looks like the browser stores a cookie with information that is later used to authenticate the user.  For example, one of the cookie fields is c_user=10000445.  These cookie fields are transmitted as a POST in plaintext.

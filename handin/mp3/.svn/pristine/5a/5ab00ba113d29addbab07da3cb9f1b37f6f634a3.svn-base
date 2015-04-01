@@ -1,0 +1,2 @@
+# Your answer here
+An attacker could copy the cookie keys and values and add them into his own browser, then load www.facebook.com and the site would recognize the user's browser based on the cookie.  Thus the attacker would be logged in as the user.  He could then post embarrassing things on the user's timeline such as, "I love Rainbow Dash!"

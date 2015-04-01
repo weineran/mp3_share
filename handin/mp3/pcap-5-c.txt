@@ -1,0 +1,2 @@
+# Your answer here
+The attack worked because the attacker could eavesdrop on the user's wireless network traffic.  So one way the user could protect himself is by only using secure wireless networks where he believes there are no other users or at least none that are eavesdropping.  Also the user should log himself out of facebook after using the site so the cookie is no longer valid. (NOTE: it appears that facebook as since fixed this vulnerability anyway.)

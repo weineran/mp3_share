@@ -1,0 +1,31 @@
+# Your answer here
+2.1 was carried out by sniffing packets in monitor mode on the 'cs461' network. One of our members has a Macbook and used the Airport utility to 'go silient' and sniff. This was done by the command:
+    
+     $ airport en1 sniff 1  
+
+en1     - WiFi card
+sniff   - argument to sniff packets
+1       - channel we sniff in which 'cs461' 
+
+This command writes to a cap file in the tmp directory. We then use aircrack to target 'cs461' and crack it. The command we run to crack the WEP key from our pcap file is:
+    
+    $ aircrack-ng -1 -a 1 -b 00:0c:e6:9a:a2:c7 airportSniffXXXX.cap
+
+Where '00:0c:e6:9a:a2:c7' is the ID of the 'cs461' network. We need sufficient traffic to crack the key. After ~100,000 IV (initialization vectors) we succesfully cracked the key. 
+
+Next monitor the network to determine what IPs belong to the client/server. After comparing with NMAP probes and Wireshark statistics we deduced the client IP is: 192.168.1.109 and server IP is 192.168.1.100. Next we probe the IPs for the services running using the command: 
+
+    $ nmap -sV -T4 -F[IP addr] 
+
+Next we probe the server to get the private key using the command:
+
+    $ nmap -A 192.168.1.100
+
+We can then log into this IP using ftp to get the private key, privkey.pem.
+
+Next we redirect traffic using the tutorial here: http://www.hackmac.org/forum/topic/1996-how-to-run-a-mitm-attack-arp-spoofing/ 
+In this tutorial we use arpspoof to redirect client/server traffic. In otherwords we are performing a man-in-the-middile attack. 
+
+Finally, we can decrypt messages redirected to our MAC address using Wireshark to extract the username/password.
+
+

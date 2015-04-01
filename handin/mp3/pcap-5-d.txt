@@ -1,0 +1,2 @@
+# Your answer here
+The user sent a Facebook message in half Russian, half English.  "Остановить нюхают My WiFi!"  Which translates to "Stop sniffing My WiFi!".  Also, before the secure login (Client Hello), it looks like the user searched for "zakir durum".
